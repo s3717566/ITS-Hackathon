@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
+  <script src="sidebar.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -15,22 +16,17 @@
     <a href="login.html">Login</a>
   </div>
 
+
   <div id="main">
+
     <button class="openbtn" onclick="openNav()">☰</button>
+    <img src="its-logo.png" width="100px" height="100px">
     <h2>You are now on the my feed page.</h2>
   </div>
 
-  <script>
-  function openNav() {
-    document.getElementById("mySidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
-
-  function closeNav() {
-    document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-</script>
+  <div id="feed">
+    <div id="testpost">The fitness gram pacer test is </div>
+  </div>
 
 </body>
 </html>
