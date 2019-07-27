@@ -45,6 +45,11 @@ h1 {
   /* display:  */
 }
 
+.removeFriend {
+  float: right;
+
+}
+
 body {
   display: block;
   width: 100%;
@@ -97,13 +102,18 @@ body {
   margin-left: 2%;
 }
 
+.postBottom img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
 .postName {
   font-weight: bold;
   color: black;
   font-size: 1.2em;
 }
 
-img {
+#postPfp {
   max-width: 40px;
   max-height: 40px;
 }
@@ -164,6 +174,16 @@ input[type=submit], input[type=button] {
   background-color: #3555b5;
   color: white;
   cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+input[type=text], input[type=password] {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
 }
 
 input[type=submit]:hover, input[type=button]:hover {
@@ -183,6 +203,9 @@ input[type=submit]:hover, input[type=button]:hover {
   background-color: #f2f2f2;
   padding: 20px 0 30px 0;
   width:50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 /* style inputs and link buttons */
@@ -233,4 +256,9 @@ padding-bottom: 3%;
   max-height: 40px;
   display: inline-flex;
   float: left;
+}
+
+#commentButton {
+  float:right;
+  padding-right: 10px;
 }

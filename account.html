@@ -3,41 +3,40 @@
 <head>
   <link rel="stylesheet" href="style.css" />
   <script src="tools.js"></script>
-  <title>Sign Up</title>
 </head>
 
 <body>
   <div id="headerDiv">
     <button class="openbtn" onclick="openNav()">☰</button>
     <div id="headerLogo">
-
-      <h1><img src="media/EarthUNi.png" id="postPfp">SIGN UP</h1>
+      <h1><img src="media/EarthUNi.png" id="postPfp">MY ACCOUNT</h1>
+      <title>My Feed</title>
     </div>
   </div>
+
+  <div id="mainDiv">
+    <div id="col1" class="column"></div>
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="home.html">My Feed</a>
-      <a href="#">Communities</a>
+      <a href="communities.html">Communities</a>
       <a href="friends.html">My Friends</a>
-      <a href="account.html">My Account</a>
+      <a href="#">My Account</a>
       <a href="login.html">Login</a>
       <!-- make this far below other sidebar items!!! if possible -->
       <a href="about.html">About</a>
     </div>
+    <div id="col2" class="column">
+      <img src="media/z2.PNG">
+      <span>Name</span>
+      <span>Age</span>
+      <span>Email Address</span>
+      <span>Followed Communities</span>
 
-    <div class="container">
-      <img src="media/EarthUNi.png">
-      <form action="pepega" method="POST">
-
-        <div class="col">
-          <input type="text" placeholder="Email Address" required>
-          <input type="password" placeholder="Password" required>
-          <input type="password" placeholder="Confirm Password" required>
-          <input type="submit" value="Sign Up">
-        </div>
-      </form>
+      <!-- insert mid content here!! -->
     </div>
-    </div>
+    <div id="col3" class="column"></div>
+  </div>
 </body>
 <footer>
 </footer>
