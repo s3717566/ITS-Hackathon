@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <script src= "{{ url_for('static',filename='tools.js') }}"></script>
+  <title>My Friends</title>
+</head>
+
+<body>
+  <div id="headerDiv">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="headerLogo">
+      <h1><img src="{{ url_for('static',filename='media/EarthUNi.png')}}" id="postPfp">MY FRIENDS (WORK IN PROGRESS)</h1>
+    </div>
+  </div>
+
+  <div id="mainDiv">
+    <div id="col1" class="column"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="home">My Feed</a>
+      <a href="communities">Communities</a>
+      <a href="friends">My Friends</a>
+      <a href="account">My Account</a>
+      <a href="login">Login</a>
+    </div>
+    <div id="col2" class="column">
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Matthew Lowlay</span>
+          <span class="removeFriend"><input type="button" value="remove"></span>
+        </div>
+      </div>
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Joe Sonson</span>
+          <span class="timeStamp"><input type="button" value="remove"></span>
+        </div>
+      </div>
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Mike Smith</span>
+          <span class="timeStamp"><input type="button" value="remove"></span>
+        </div>
+      </div>
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Jo Laportay</span>
+          <span class="timeStamp"><input type="button" value="remove"></span>
+        </div>
+      </div>
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Nam lemay</span>
+          <span class="timeStamp"><input type="button" value="remove"></span>
+        </div>
+      </div>
+    <div id="col3" class="column"></div>
+  </div>
+</body>
+<footer>
+</footer>
+</html>

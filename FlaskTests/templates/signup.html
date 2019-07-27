@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <script src= "{{ url_for('static',filename='tools.js') }}"></script>
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div id="headerDiv">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="headerLogo">
+
+      <h1><img src="{{ url_for('static',filename='media/EarthUNi.png')}}" id="postPfp">SIGN UP</h1>
+    </div>
+  </div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="home">My Feed</a>
+      <a href="communities">Communities</a>
+      <a href="friends">My Friends</a>
+      <a href="account">My Account</a>
+      <a href="login">Login</a>
+    </div>
+
+    <div class="container">
+      <img src="{{ url_for('static',filename='media/EarthUNi.png')}}">
+      <form action="login.html" method="POST">
+
+        <div class="col">
+          <input type="text" placeholder="Email Address" required>
+          <input type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <input type="submit" value="Sign Up">
+        </div>
+      </form>
+    </div>
+    </div>
+</body>
+<footer>
+</footer>
+</html>

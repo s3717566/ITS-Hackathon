@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"/>
+  <script src="{{ url_for('static',filename='tools.js') }}"></script>
+  <title>Communities</title>
+</head>
+
+<body>
+  <div id="headerDiv">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="headerLogo">
+
+      <h1><img src="{{ url_for('static',filename='media/EarthUNi.png') }}">COMMUNITIES</h1>
+    </div>
+  </div>
+
+  <div id="mainDiv">
+    <div id="col1" class="column"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="home">My Feed</a>
+      <a href="communities">Communities</a>
+      <a href="friends">My Friends</a>
+      <a href="account">My Account</a>
+      <a href="login">Login</a>
+      <!-- make this far below other sidebar items!!! if possible -->
+      <a href="about.html">About</a>
+    </div>
+         <!-- key is community name, value is description -->
+         <div id="col2" class="column">
+         {% for key, value, value2 in comArray %}
+         
+               <div class="post">
+                 <div class="postTop">
+                   <!-- <img src= "{{value2}}" id="postPfp"> </img>  -->
+                   <span class="postName">{{key}}</span>
+                   {{value2}}
+                 </div>
+                 <div class="postMid">
+                   <div class="postText">
+                     {{value}}
+                   </div>
+                 </div>
+                 <div class="postBottom">12,345 followers</div>
+               </div>
+            <!-- <tr>
+               <th> {{ key }} </th>
+               <td> {{ value }} </td>
+            </tr> -->
+         {% endfor %}
+         </div>
+      </table>
+   </body>
+</html>

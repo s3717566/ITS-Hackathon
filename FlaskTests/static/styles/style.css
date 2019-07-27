@@ -1,0 +1,272 @@
+#headerDiv {
+  display: flex;
+  width: 100%;
+  color: #3555b5;
+  background-color: #f9f9f9;
+  margin-bottom: 5%;
+  box-shadow: 0px 1px 5px #888888;
+}
+
+#headerLogo {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.column {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  max-width: 12.5%;
+  min-width: 12.5%;
+  overflow: auto;
+}
+
+#col1, #col3 {
+  /* width: 100vh; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#col2 {
+  min-width: 50%;
+  /* background-color: #f9f9f9; */
+  flex-direction: column;
+  border-radius: .3rem;
+}
+
+.timeStamp {
+  float: right;
+  margin-right: 1%;
+  /* display:  */
+}
+
+.removeFriend {
+  float: right;
+
+}
+
+body {
+  display: block;
+  width: 100%;
+  /* max-height: 100vh; */
+  overflow: scroll;
+  font-family: sans-serif;
+  background-color: #4ebede;
+  margin: 0;
+}
+
+#mainDiv {
+  width: 100vw;
+  min-height: 100vh;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.post {
+  width: 90%;
+  min-width: 90%;
+  margin-left: 5%;
+  margin-top: 3%;
+  background-color: white;
+  max-height: 25%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #888888;
+  border-top: 10px solid #aaedff;
+  background-color: #f9f9f9;
+  flex-direction: row;
+  display: block;
+  overflow: auto;
+}
+
+.postTop {
+  width: 90%;
+  height: 20%;
+  padding-top: 2%;
+  margin-left: 2%;
+}
+
+.postMid {
+  max-height: 30%;
+  padding-bottom: 10%;
+  margin-left: 2%;
+  margin-top: 3%;
+}
+
+.postBottom {
+  margin-left: 2%;
+}
+
+.postBottom img {
+  max-width: 25px;
+  max-height: 25px;
+}
+
+.postName {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2em;
+}
+
+#postPfp {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 0px 1px 5px #888888;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  height: 60px;
+  width: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  color: black;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* style the submit button */
+input[type=submit], input[type=button] {
+  background-color: #3555b5;
+  color: white;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+input[type=text], input[type=password] {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type=submit]:hover, input[type=button]:hover {
+  background-color: #5e74b5;
+}
+
+/* style the logo within the login form */
+.container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px 0 30px 0;
+  width:50vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 90%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.container img {
+  height: 200px;
+  width: 200px;
+}
+
+.postCommentSect {
+  width: 100%;
+  min-height: 5vh;
+  margin-top: 20px;
+  padding-bottom: 3%;
+}
+
+.postComment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.commentName {
+  font-weight: bold;
+  color: #4ebede;
+  margin-bottom: 8px;
+}
+
+.commentImg {
+  /* display: flex; */
+  max-width: 40px;
+  max-height: 40px;
+  display: inline-flex;
+  float: left;
+}
+
+#commentButton {
+  float:right;
+  padding-right: 10px;
+}
+
+.postName input, .col2 input {
+  max-width: 100px;
+  max-height: 40px;
+  float:right;
+}

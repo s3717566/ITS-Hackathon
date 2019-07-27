@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <script src= "{{ url_for('static',filename='tools.js') }}"></script>
+</head>
+
+<body>
+  <div id="headerDiv">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="headerLogo">
+      <h1><img src="{{ url_for('static',filename='media/EarthUNi.png')}}" id="postPfp">MY FEED</h1>
+      <title>My Feed</title>
+    </div>
+  </div>
+
+  <div id="mainDiv">
+    <div id="col1" class="column"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="home">My Feed</a>
+      <a href="communities">Communities</a>
+      <a href="friends">My Friends</a>
+      <a href="account">My Account</a>
+      <a href="login">Login</a>
+    </div>
+    <div id="col2" class="column">
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Jane Benson</span>
+          <span class="timeStamp">21 min ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Hi all, i was just wondering how to deal with this random error i had in Java, thanks in advance.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Ben Kenway</span>
+          <span class="timeStamp">43 min ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            I want to start a discussion on the new C# libraries, anyone else interested in the new scalability.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>        <!-- start comments -->
+        <div class="postCommentSect">
+          <div class="postComment">
+            <hr>
+            <img class="commentImg" src="{{ url_for('static',filename='media//z2.png')}}"></img>
+            <div class="commentName">
+              Jacquline Quinn
+            </div>
+            <span>
+              I thought the new additions were interesting
+            </span>
+          </div>
+
+          <div class="postComment">
+            <hr>
+            <img class="commentImg" src="{{ url_for('static',filename='media//z2.png')}}"></img>
+            <div class="commentName">
+              Rem demion
+            </div>
+            <span>
+              I too thought the new additions were interesting but the implementation leaves a lot to be desired. i honestly think they shouldn't have made these additions.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Bree Connie</span>
+          <span class="timeStamp">57 min ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Guys! i seriously need help, my assignmant iss due ins lik 3  hours and i cant figur eout how to implement the car feature?? can someone eplain?
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Duncan Bootlong</span>
+          <span class="timeStamp">2 hours ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Aight so guys i have an issue in C++ can someone explain pointers to me, thanks
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Holly Smith</span>
+          <span class="timeStamp">6 hours ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            I'm a little confused, so what if I added a seperate class for the network adaptations.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">John Creamer</span>
+          <span class="timeStamp">11 hours ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Quick questions guys: can we submit a powerpoint for the final project in scr0029?
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">James Jackson</span>
+          <span class="timeStamp">23 hours ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Can anyone please explain the answer to the mock exam question 3c? my tutor really isn't helping.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Joe Sonson</span>
+          <span class="timeStamp">1 day ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Definetly not confused by the current PT topic but like can anyone explain it to me? asking for a friend, not for myself.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+        <!-- start comments -->
+        <div class="postCommentSect">
+          <div class="postComment">
+            <hr>
+            <img class="commentImg" src="{{ url_for('static',filename='media//z2.png')}}"></img>
+            <div class="commentName">
+              Patrick Hail
+            </div>
+            <span>
+              this is definetly not for the friend.
+            </span>
+          </div>
+
+          <div class="postComment">
+            <hr>
+            <img class="commentImg" src="{{ url_for('static',filename='media//z2.png')}}"></img>
+            <div class="commentName">
+              Rom Remia
+            </div>
+            <span>
+              I don't think so. sure i can help with the PT topic, its simple, a while loop continously reapeats a few lines of code until the condition statement at the beginning of the while loop is still true.
+            </span>
+          </div>
+          <!-- end comments -->
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Matthew lowlay</span>
+          <span class="timeStamp">1 day ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Hi i'm a first year Computer science student an i was looking for help in programming techniques, specifically the stuff from lecture 5. can anyone help?
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media//z2.png')}}" id="postPfp"> </img>
+          <span class="postName">Mike namsake</span>
+          <span class="timeStamp">1 day ago</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            anyone doing Database concepts that can help me install Oracle? i'm really struggling here.
+          </div>
+        </div>
+        <div class="postBottom"><img src="{{ url_for('static',filename='media//thumbsup.png')}}"> 69 <img src="{{ url_for('static',filename='media//thumbsdown.png')}}"><img src="{{ url_for('static',filename='media//comment.png')}}" id="commentButton"></div>
+      </div>
+
+    </div>
+    <div id="col3" class="column"></div>
+  </div>
+</body>
+<footer>
+</footer>
+</html>

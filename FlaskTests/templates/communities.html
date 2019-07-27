@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  <script src= "{{ url_for('static',filename='tools.js') }}"></script>
+  <title>Communities</title>
+</head>
+
+<body>
+  <div id="headerDiv">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div id="headerLogo">
+
+      <h1><img src="{{ url_for('static',filename='media/EarthUNi.png')}}" id="postPfp">COMMUNITIES</h1>
+    </div>
+  </div>
+
+  <div id="mainDiv">
+    <div id="col1" class="column"></div>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="home">My Feed</a>
+      <a href="communities">Communities</a>
+      <a href="friends">My Friends</a>
+      <a href="account">My Account</a>
+      <a href="login">Login</a>
+    </div>
+    <div id="col2" class="column">
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/c-logo.png')}}" id="postPfp"> </img>
+          <span class="postName"><a href="testcommunity">C++ Community</a></span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Quisque volutpat augue et feugiat ultrices. Cras malesuada at nunc vitae vehicula. Integer commodo volutpat lorem. Integer ultricies, nisi vel vulputate fermentum, ipsum erat faucibus mi, at ornare libero nunc sed est. Vestibulum in turpis malesuada, varius nibh ac, ornare leo. Duis vitae tellus blandit tellus pellentesque ornare in auctor ante. Donec accumsan ante ut lacus molestie feugiat.
+          </div>
+        </div>
+        <div class="postBottom">12,345 followers</div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/java-logo.png')}}" id="postPfp"> </img>
+          <span class="postName">Java Community</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+              Vestibulum et ullamcorper justo. Duis eu enim vel purus dapibus vehicula ut vel arcu. Nam velit nisi, lacinia nec blandit eget, porttitor ac metus. Sed at tristique ligula. Etiam vulputate rhoncus urna sed convallis. Quisque ultricies euismod dapibus. Suspendisse ornare mattis augue sed mattis. Duis eleifend magna ex, nec fringilla nulla lobortis at. Mauris interdum sollicitudin metus non consequat. Phasellus vehicula nisl sed consequat efficitur.
+          </div>
+        </div>
+        <div class="postBottom">666 followers</div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/python-logo.png')}}" id="postPfp"> </img>
+          <span class="postName">Python Community</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Aliquam sit amet aliquet odio. Cras sem neque, dapibus non varius eget, condimentum in quam. Vestibulum quis diam bibendum, efficitur enim quis, semper sapien. Duis sagittis, felis ac consectetur bibendum, metus justo pretium diam, vel tincidunt mi turpis non justo. Vivamus id mollis felis. Mauris luctus pretium gravida. Donec quis eleifend erat, et elementum elit. Nulla facilisi. Phasellus in interdum tellus, non lobortis lectus. Pellentesque dignissim sagittis lobortis. Cras hendrerit mi dignissim felis fermentum malesuada. Fusce maximus a enim quis congue.
+          </div>
+        </div>
+        <div class="postBottom">42,069 followers</div>
+      </div>
+
+      <div class="post">
+        <div class="postTop">
+          <img src="{{ url_for('static',filename='media/z2.png')}}" id="postPfp"> </img>
+          <span class="postName">SQL Community</span>
+        </div>
+        <div class="postMid">
+          <div class="postText">
+            Quisque in massa eu nisl pellentesque viverra. Duis eu iaculis quam. Proin in dui id erat rutrum tempor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ullamcorper lectus sed magna congue tristique. Ut urna orci, viverra quis ante vel, dictum pretium nisi. Nullam vulputate mi purus, ut molestie mi finibus ac. Donec libero magna, mattis ut metus ac, tristique hendrerit risus.
+          </div>
+        </div>
+        <div class="postBottom">8,008,135 followers</div>
+      </div>
+
+    </div>
+    <div id="col3" class="column"></div>
+  </div>
+</body>
+<footer>
+</footer>
+</html>

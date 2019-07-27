@@ -1,0 +1,13 @@
+
+//Obtain post content from post
+SELECT Post_Content
+FROM POSTS P, COMMUNITYPOSTS C
+WHERE P.post_ID = C.post_ID;
+
+//Obtain user_ID from post
+SELECT User_ID 
+FROM USERS U, POSTS P
+WHERE U.User_ID = P.User_ID;
+
+//Obtain 
+
