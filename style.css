@@ -34,7 +34,7 @@ h1 {
 
 #col2 {
   min-width: 50%;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   flex-direction: column;
   border-radius: .3rem;
 }
@@ -78,7 +78,8 @@ body {
   max-height: 25%;
   border-radius: 10px;
   box-shadow: 1px 1px 5px #888888;
-  border-top: 10px solid #4ebede;
+  border-top: 10px solid #aaedff;
+  background-color: #f9f9f9;
   flex-direction: row;
   display: block;
   overflow: auto;
@@ -114,8 +115,8 @@ body {
 }
 
 #postPfp {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .sidebar {
@@ -125,10 +126,11 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #f9f9f9;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  box-shadow: 0px 1px 5px #888888;
 }
 
 .sidebar a {
@@ -193,8 +195,8 @@ input[type=submit]:hover, input[type=button]:hover {
 /* style the logo within the login form */
 .container img {
   display: block;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container {
@@ -232,8 +234,8 @@ input,
 .postCommentSect {
   width: 100%;
   min-height: 5vh;
-margin-top: 20px;
-padding-bottom: 3%;
+  margin-top: 20px;
+  padding-bottom: 3%;
 }
 
 .postComment {
@@ -261,4 +263,10 @@ padding-bottom: 3%;
 #commentButton {
   float:right;
   padding-right: 10px;
+}
+
+.postName input, .col2 input {
+  max-width: 100px;
+  max-height: 40px;
+  float:right;
 }
